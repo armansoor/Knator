@@ -27,9 +27,6 @@ Each result includes:
 
 ---
 
-## 📂 Project Structure
----
-
 ## 🚀 How to Run  
 1. Clone or download this repo.  
 2. Open `index.html` in your browser.  
