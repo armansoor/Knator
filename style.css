@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background: linear-gradient(135deg, #ffeef5, #e6f0ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #ff5fa2;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ffd6eb;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.tab-btn.active {
+  background: #ffaad4;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Input + Select + Button */
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: #ffaad4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff5fa2;
+}
+
+/* Result Card */
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff5fb;
+  border: 2px solid #ffaad4;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.result-card .hangul {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2rem;
+  color: #ff5fa2;
+}
+
+.result-card .roman {
+  font-style: italic;
+  margin: 5px 0;
+  color: #555;
+}
+
+.result-card .meaning {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #777;
+}
