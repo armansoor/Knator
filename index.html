@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean Name Generator</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌸 Korean Name Generator 🌸</h1>
+    <p class="subtitle">Get your K-drama style Korean name!</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="random">🎲 Random</button>
+      <button class="tab-btn" data-tab="personal">📝 My Name</button>
+    </div>
+
+    <!-- Random Name Generator -->
+    <div id="random" class="tab-content active">
+      <label for="genderRandom">Choose Gender:</label>
+      <select id="genderRandom">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="generateRandomName()">Generate</button>
+      <div id="randomResult" class="result-card"></div>
+    </div>
+
+    <!-- Personalized Name Generator -->
+    <div id="personal" class="tab-content">
+      <label for="inputName">Enter Your Name:</label>
+      <input type="text" id="inputName" placeholder="e.g., Abdur Rahman Mansoor">
+      <label for="genderPersonal">Choose Gender:</label>
+      <select id="genderPersonal">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="generatePersonalName()">Generate</button>
+      <div id="personalResult" class="result-card"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💖 in K-style | Korean Name Generator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
